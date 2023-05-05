@@ -1,0 +1,53 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #efefef;
+}
+
+
+.Animation{
+    height: 600px;
+    max-width:1200px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 10px;
+}
+
+
+.animation-div1{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 120px;
+    border-radius: 100%;
+    box-shadow: 15px 115px 20px rgb(255, 0, 0), -15px -1px 20px rgb(255, 0, 0) ;
+    animation-name: animation;
+    animation-duration: 0.8s;
+    animation-iteration-count:infinite;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(5.075, 5.82, 5.165, 441);
+}
+@keyframes animation{
+    0% {transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+
+.animation-div1 .circle{
+    color: #ffffff;
+    height: 100px;
+    width: 70px;
+    border-radius: 1000%;
+    box-shadow: 5px 25px 5px rgb(255, 0, 225), -5px -25px 5px rgb(0, 42, 255);
+    background-color: brown;
+}
